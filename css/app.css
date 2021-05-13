@@ -122,3 +122,6 @@ i.bxs-sun{
     align-items: center;
     justify-content: center;
 }
+.btn:active{
+    box-shadow: var(--btn-shadow-inset);
+}
