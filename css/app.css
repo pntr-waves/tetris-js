@@ -232,9 +232,59 @@ i.bxs-sun{
     font-size: 20px;
 }
 
-.cotianer img.fall{
+.container img.fall{
     position: absolute;
     animation: fall linear infinite;
+}
+
+.loading{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    background-color: var(--bg-color);
+    z-index: 100;
+}
+
+.loading .square{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: calc(var(--block-size) *4);
+    height: calc(var(--block-size) *4);
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+}
+
+.loading .square div{
+    width: var(--block-size);
+    height: var(--block-size);
+    border: 1px solid var(--bg-color);
+    background-color: var(--color);
+}
+
+.loading .square div:nth-child(5),
+.loading .square div:nth-child(9),
+.loading .square div:nth-child(13),
+.loading .square div:nth-child(14){
+    background-color: #e84393;
+}
+
+.loading .square div:nth-child(6),
+.loading .square div:nth-child(10),
+.loading .square div:nth-child(11),
+.loading .square div:nth-child(15){
+    background-color: #e1b12c;
+}
+
+.loading .square div:nth-child(1),
+.loading .square div:nth-child(2),
+.loading .square div:nth-child(3),
+.loading .square div:nth-child(7){
+    background-color: #00cec9;
 }
 
 .pause #btn-new-game, 
