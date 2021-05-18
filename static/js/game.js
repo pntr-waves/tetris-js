@@ -16,13 +16,17 @@ btns.forEach((e) => {
         break;
       case "btn-pause":
         let btnplay = document.querySelector("#btn-play");
-        btnplay.innerHTML = 'Resume'
+        btnplay.innerHTML = "Resume";
         body.classList.remove("play");
         body.classList.add("pause");
         break;
       case "btn-new-game":
         body.classList.add("play");
         body.classList.remove("pause");
+        break;
+      case "btn-help":
+        let how_to=document.querySelector('.how-to')
+        how_to.classList.toggle('active')
         break;
     }
   });
