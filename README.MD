@@ -11,6 +11,3 @@ LINK VIDEO
 ---
 >Part 2: https://www.youtube.com/watch?v=cOpkJD6K3IQ
 ---
-LINK CHANNEL
----
->https://www.youtube.com/c/TuatTranAnh/featured
